@@ -1,0 +1,50 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin: 1in;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    page-break-after: avoid;
+    font-family: "Times New Roman", Times, serif;
+}
+
+@media print {
+    body {
+        margin: 10px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+    }
+
+    button {
+        display: none;
+    }
+    audio {
+       display : none; 
+    }
+    iframe {
+        display : none;
+    }
+    video {
+        display : none;
+    }
+}

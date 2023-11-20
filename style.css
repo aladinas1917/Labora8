@@ -13,6 +13,7 @@ h1, h2, h3 {
 
 h1 {
     color: #171e6e;
+    text-align: center;
 }
 
 h2 {
@@ -24,7 +25,7 @@ h3 {
 }
 
 img {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
 }
 
@@ -42,7 +43,7 @@ ul, ol {
   }
 
 div button {
-    width: 80%;
+    width: 30%;
     background-color: #4c6baf;
     color: white;
     padding: 14px 20px;
@@ -120,11 +121,10 @@ div {
 
 
 /* Hover efektas */
-div:hover, section:hover {
-    opacity: 0.8;
+div:hover{
+    opacity: 0.7;
 }
 button {
-    width: 80%;
     background-color: #527d57;
     padding: 5px 5px;
     margin: 5px 0;
@@ -143,3 +143,50 @@ button:hover{
 button:active{
     transform: scale(1.2);
 }
+section button{
+        background-color: #d1511f;
+        padding: 5px 5px;
+        margin: 5px 0;
+        width: 150px;
+        border: 5px solid #48250d;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+section button:hover{
+    border-color: #e204db;
+    background-color: #8d146bb9;
+}
+section h2{
+    font-family: 'Impact', sans-serif;
+    font-weight: normal;
+    background-color: #e2f2eb;
+    margin: 30px;
+}
+
+
+audio {
+    width: 20%;
+    margin-top: 10px;
+}
+audio:hover{
+    transform: scale(1.1);
+}
+audio::-webkit-media-controls-panel {
+    background-color: #766ee4b9;
+  }
+
+  audio::-webkit-media-controls-mute-button {
+    background-color: #4236e6b9;
+    border-radius: 50%;
+  }
+
+  audio::-webkit-media-controls-play-button {
+    background-color: #4236e6b9;
+    border-radius: 50%;
+  }
+
+  audio::-webkit-media-controls-play-button:hover {
+    background-color: #e63697b9;
+  }

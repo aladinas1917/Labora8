@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-print.css" media="print">
     <title>Justas Baranauskas</title>
 </head>
 <body>
             <h1 class="display-4">Svetainė pagal šabloną</h1>
-            <img src="homer.gif" alt="homer">
-        
+            <h1><img src="homer.gif" alt="homer"></h1>
         <div>
-        <p>
-            <button id="VilniusTech" name="VilniusTech" onclick="window.open('https://vilniustech.lt/', '_blank')">VilniusTech</button>
-        </p>
+        
+           <h1><button id="VilniusTech" name="VilniusTech" onclick="window.open('https://vilniustech.lt/', '_blank')">VilniusTech</button></h1>
+        
     </div>
         
         <h2>Apie :</h2>
@@ -26,7 +28,18 @@
             <li>Aprašymas</li>
             <li>Atlikti darbai</li>
         </ul>
-        
+        <section>
+            <h2>
+        <button onclick="window.print()">Spausdinti...</button>
+    </h2>
+    </section>
+        <script>
+          function printPage() {
+            window.print();
+          }
+    
+        </script>
+ 
         <h2>Atlikti darbai :</h2>
         <ul>
             <li>MatLab
@@ -110,7 +123,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+
+
+
 </body>
+
 </html>
+
