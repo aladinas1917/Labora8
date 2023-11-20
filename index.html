@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-<meta charset=UTF-8>
-
-<title>Justas Baranauskas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justas Baranauskas</title>
 </head>
 <body>
-        <H1>Svetainė pagal šabloną</H1>
-        <img src="homer.gif" alt="homer" width="320" height="200">
-        <H2>Apie :</H2>
-        Justas Baranauskas | EF22/1 | 2003.09.18 | <br>
-        <img src="bbJg7Ga.png" alt="Justas" width="170" height="150">
-        <H2>Aprašymas :</H2>
-        Laboratorinis darbas, padaryti tinklapį su skiltimis :
+            <h1 class="display-4">Svetainė pagal šabloną</h1>
+            <img src="homer.gif" alt="homer">
+        
+        <div>
+        <p>
+            <button id="VilniusTech" name="VilniusTech" onclick="window.open('https://vilniustech.lt/', '_blank')">VilniusTech</button>
+        </p>
+    </div>
+        
+        <h2>Apie :</h2>
+        <p>Justas Baranauskas | EF22/1 | 2003.09.18 |</p>
+        <img src="bbJg7Ga.png" alt="Justas">
+        
+        <h2>Aprašymas :</h2>
+        <p>Laboratorinis darbas, padaryti tinklapį su skiltimis :</p>
         <ul>
             <li>Apie</li>
             <li>Aprašymas</li>
             <li>Atlikti darbai</li>
-          </ul>
-        <H2>Atlikti darbai :</H2>
+        </ul>
+        
+        <h2>Atlikti darbai :</h2>
         <ul>
             <li>MatLab
                 <ul>
@@ -40,7 +49,8 @@
                 </ul>
             </li>
         </ul>
-        <H2>Paslaugos :</H2>
+        
+        <h2>Paslaugos :</h2>
         <ol>
             <li>Parašyti kodą, chat gpt pagalba</li>
             <li>Paskaičiuoti matematines lygtis, youtube pagalba</li>
@@ -48,17 +58,59 @@
             <li>Nubraižyti KiCad elektrinę schemą</li>
             <li>Sukurti spausdinimo polkštę pagal elektrinę schemą, KiCad'e</li>
         </ol>
-        <H3>Crazy Frog</H3>
-        <iframe width="430" height="245" src="https://www.youtube.com/embed/k85mRPqvMbE" 
-         allowfullscreen></iframe>
-        <br>
-        <H3>Mr Trolololololo</H3>
+        
+        <h3>Crazy Frog</h3>
+        <iframe width="430" height="245" src="https://www.youtube.com/embed/k85mRPqvMbE" allowfullscreen></iframe>
+        
+        <h3>Mr Trolololololo</h3>
         <video width="420" height="320" controls>
             <source src="trolololo.mp4" type="video/mp4">
-          </video> <br>
-        <H3>Never gonna give you up</H3>
+        </video>
+        
+        <h3>Never gonna give you up</h3>
         <audio controls>
             <source src="Ricky.mp3" type="audio/mpeg">
         </audio>
+        
+        <h2>Jūsų duomenys :</h2>
+        Duomenys, kurių pagalba su jumis susisieksime:<br>
+        
+            <h3>Jūsų vardas:</h3>
+            <label for="name">
+                <input id="name" type="text" name="name">
+            </label>
+        
+
+        
+            <h3>Elektroninis paštas: </h3>
+            <label for="email">
+                <input id="email" type="email" name="email">
+            </label>
+        
+        
+        
+            <h3>Norima paslauga :</h3>
+            <label for="paslauga">
+                <select id="paslauga" name="paslauga">
+                    <option>Jokia</option>
+                    <option>Parašyti kodą, chat gpt pagalba</option>
+                    <option>Paskaičiuoti matematines lygtis, youtube pagalba</option>
+                    <option>Nubraižyti AutoCad brėžinį, kažkaip ne taip</option>
+                    <option>Nubraižyti KiCad elektrinę schemą</option>
+                    <option>Sukurti spausdinimo polkštę pagal elektrinę schemą, KiCad'e</option>
+
+                </select>
+            </label>
+        
+        <p>
+            <button id="submit" name="submit">Pateikti</button>
+        </p>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </body>
 </html>
